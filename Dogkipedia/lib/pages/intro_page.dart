@@ -36,9 +36,23 @@ class IntroPage extends StatelessWidget {
             ),
 
             //title
+            Text(
+                "All about different breeds of dogs",
+              style: GoogleFonts.archivoBlack(
+                color: Colors.white,
+                fontSize: 35,
+              ),
+            ),
+
+            const SizedBox(height: 10),
 
             //subtitle
-
+            Text(
+                "Expand your horizons and learn more about our four-legged companions",
+              style: TextStyle(
+                height: 1.5 ,
+              ),
+            ),
             //start button
           ],
         ),
