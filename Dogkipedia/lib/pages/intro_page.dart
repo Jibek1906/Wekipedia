@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:dogkipedia/components/button.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({Key? key}) : super(key: key);
@@ -12,6 +13,7 @@ class IntroPage extends StatelessWidget {
         padding: const EdgeInsets.all(25.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             const SizedBox(height: 25),
             //site name
@@ -53,7 +55,15 @@ class IntroPage extends StatelessWidget {
                 height: 1.5 ,
               ),
             ),
+
+            const SizedBox(height: 20),
             //start button
+            MyButton(
+                text: "Get Started",
+                onTap: () {
+                  Navigator.pushNamed(context, '/menupage');
+                  },
+            )
           ],
         ),
       ),
