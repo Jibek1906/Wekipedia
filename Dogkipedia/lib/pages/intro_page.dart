@@ -9,31 +9,40 @@ class IntroPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 157, 226, 192),
       body: Padding(
-        padding: const EdgeInsets.all(30.0),
+        padding: const EdgeInsets.all(25.0),
         child: Column(
-        children: [
-          const SizedBox(height: 30,),
-          //site name
-          Text(
-            "Dogkipedia",
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const SizedBox(height: 25),
+            //site name
+            Text(
+              "Dogkipedia",
               style: GoogleFonts.archivoBlack(
                 color: Colors.white,
                 fontSize: 30,
               ),
             ),
 
-          const SizedBox(height: 28,),
-          
-          //icon
-          
-          //title
-          
-          //subtitle
-          
-          //start button
-         ],
+            const SizedBox(height: 28),
+
+            //icon
+            Padding(
+              padding: const EdgeInsets.all(50.0),
+              child: SizedBox(
+                width: 250,
+                height: 250,
+                child: Image.asset('lib/images/happy.png'),
+              ),
+            ),
+
+            //title
+
+            //subtitle
+
+            //start button
+          ],
         ),
-       ),
-     );
-   }
+      ),
+    );
+  }
 }
