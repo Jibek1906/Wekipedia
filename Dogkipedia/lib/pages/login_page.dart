@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:dogkipedia/components/my_textfield.dart';
+import 'package:dogkipedia/components/sign_in.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key});
-
   // text editing controller
   static final usernameController = TextEditingController();
   static final passwordController = TextEditingController();
+
+  // sign user in method
+  void signUserIn() {}
 
   @override
   Widget build(BuildContext context) {
@@ -64,16 +67,20 @@ class LoginPage extends StatelessWidget {
                    children: [
                      Text(
                        'Forgot Password?',
-                       style: TextStyle(color: Colors.white),
+                       style: TextStyle(color: Colors.black),
                      ),
                    ],
                  ),
              ),
 
               const SizedBox(height: 25),
-              
 
               // sign in
+              Button(
+                onTap: signUserIn,
+              ),
+
+              const SizedBox(height: 50),
 
               // register now
             ],
