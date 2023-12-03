@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:dogkipedia/components/my_textfield.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key});
+
+  // text editing controller
+  static final usernameController = TextEditingController();
+  static final passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -33,24 +38,21 @@ class LoginPage extends StatelessWidget {
               const SizedBox(height: 25),
 
               // username
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                child: TextField(
-                 decoration: InputDecoration(
-                  enabledBorder: const OutlineInputBorder(
-                    borderSide: BorderSide(color: Color.fromARGB(255, 189, 229, 201),)
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Color.fromARGB(
-                        255, 117, 155, 118))
-                    ),
-                   fillColor: Color.fromARGB(255, 189, 229, 201),
-                   
-                   filled: true,
-                  ),
-                ),
+              MyTextField(
+                controller: usernameController,
+                hintText: 'Username',
+                obscureText: false,
+
               ),
+
+              const SizedBox(height: 10),
               // password
+              MyTextField(
+                controller: passwordController,
+                hintText: 'Password',
+                obscureText: true,
+
+              ),
 
               // forgot password?
 
