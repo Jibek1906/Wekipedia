@@ -31,7 +31,7 @@ class LoginPage extends StatelessWidget {
                 "Welcome to Dogkipedia",
                 style: GoogleFonts.archivoBlack(
                   color: Colors.white,
-                  fontSize: 20,
+                  fontSize: 25,
                 ),
               ),
 
@@ -54,7 +54,24 @@ class LoginPage extends StatelessWidget {
 
               ),
 
+              const SizedBox(height: 10),
+
               // forgot password?
+             Padding(
+                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                 child:  Row(
+                   mainAxisAlignment: MainAxisAlignment.end,
+                   children: [
+                     Text(
+                       'Forgot Password?',
+                       style: TextStyle(color: Colors.white),
+                     ),
+                   ],
+                 ),
+             ),
+
+              const SizedBox(height: 25),
+              
 
               // sign in
 
