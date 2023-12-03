@@ -5,6 +5,7 @@ import 'package:dogkipedia/components/sign_in.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key});
+
   // text editing controller
   static final usernameController = TextEditingController();
   static final passwordController = TextEditingController();
@@ -25,7 +26,7 @@ class LoginPage extends StatelessWidget {
               // logo
               Icon(
                 Icons.lock,
-                size: 100,
+                size: 200,
               ),
 
               const SizedBox(height: 50),
@@ -83,6 +84,19 @@ class LoginPage extends StatelessWidget {
               const SizedBox(height: 50),
 
               // register now
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('Dont have account?'),
+                  const SizedBox(width: 4),
+                  Text(
+                      'Register now',
+                      style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold
+                      ),
+                  ),
+                ],
+              )
             ],
           ),
         ),
