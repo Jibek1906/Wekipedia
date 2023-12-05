@@ -56,7 +56,7 @@ class IntroPage extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: 20),
+            const SizedBox(height: 20, width: 30,),
             //start button
             MyButton(
                 text: "Get Started",
