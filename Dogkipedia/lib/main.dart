@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'pages/login_page.dart';
 import 'pages/intro_page.dart';
 import 'pages/menu_page.dart';
+import 'package:Dogkipedia/components/user.dart';
 
 void main() {
   runApp(const MyApp());

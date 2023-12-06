@@ -1,3 +1,5 @@
+// my_button.dart
+
 import 'package:flutter/material.dart';
 
 class MyButton extends StatelessWidget {
@@ -5,10 +7,10 @@ class MyButton extends StatelessWidget {
   final void Function()? onTap;
 
   const MyButton({
-    super.key,
+    Key? key,
     required this.text,
     required this.onTap,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,9 +30,9 @@ class MyButton extends StatelessWidget {
               style: TextStyle(color: Colors.white),
             ),
 
-            const SizedBox(width: 8), // Adjusted the width of SizedBox for spacing
+            const SizedBox(width: 8),
 
-            //icon
+            // Icon
             Icon(
               Icons.arrow_forward,
               color: Colors.white,
