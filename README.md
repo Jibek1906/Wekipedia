@@ -1,10 +1,29 @@
-# Dog-kipedia
-## An application for Dog lovers where you can:
-- find information about breeds
-- see pictures of adorable puppies
-- manage data (add/delete)
+# Dogkipedia
 
-### The most important, we created cute design for the app, so you can both enjoy and educate yourself!
-*screenshots*
-*screenshots*
-*screenshots*
+Dogkipedia is a mobile application that provides information about various dog breeds. Users can explore details, images, and characteristics of different dog breeds through an intuitive and user-friendly interface.
+
+## Features
+
+- User authentication
+- Browse a collection of popular dog breeds.
+- View detailed information about each dog breed, including images and descriptions.
+- Search for specific dog breeds using the search bar.
+
+## Screenshots
+
+![image](https://github.com/Jibek1906/Wekipedia/assets/100151471/da0d14e0-2363-4ef8-a8fa-d7741eb6f731)
+![image](https://github.com/Jibek1906/Wekipedia/assets/100151471/8207ef16-c5b6-4976-b98a-499e74c2b4ed)
+![Снимок экрана 2023-12-08 205221](https://github.com/Jibek1906/Wekipedia/assets/100151471/6f0c334f-359b-48f8-b9ce-429552cdeee2)
+![Снимок экрана 2023-12-08 205234](https://github.com/Jibek1906/Wekipedia/assets/100151471/b7c07770-eba9-452f-a633-d8f348703aa1)
+
+
+### Prerequisites
+
+- Flutter SDK: [Install Flutter](https://flutter.dev/docs/get-started/install)
+- Dart SDK: [Install Dart](https://dart.dev/get-dart)
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/Dogkipedia.git
+
