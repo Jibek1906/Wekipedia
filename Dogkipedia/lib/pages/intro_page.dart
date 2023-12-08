@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:dogkipedia/components/button.dart';
+import 'package:Dogkipedia/components/button.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({Key? key}) : super(key: key);
@@ -39,7 +39,7 @@ class IntroPage extends StatelessWidget {
 
             //title
             Text(
-                "All about different breeds of dogs",
+              "All about different breeds of dogs",
               style: GoogleFonts.archivoBlack(
                 color: Colors.white,
                 fontSize: 35,
@@ -50,7 +50,7 @@ class IntroPage extends StatelessWidget {
 
             //subtitle
             Text(
-                "Expand your horizons and learn more about our four-legged companions",
+              "Expand your horizons and learn more about our four-legged companions",
               style: TextStyle(
                 height: 1.5 ,
               ),
@@ -59,10 +59,10 @@ class IntroPage extends StatelessWidget {
             const SizedBox(height: 20, width: 30,),
             //start button
             MyButton(
-                text: "Get Started",
-                onTap: () {
-                  Navigator.pushNamed(context, '/menupage');
-                  },
+              text: "Get Started",
+              onTap: () {
+                Navigator.pushNamed(context, '/menupage');
+              },
             )
           ],
         ),

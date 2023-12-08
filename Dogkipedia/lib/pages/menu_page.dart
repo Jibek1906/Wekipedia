@@ -1,5 +1,5 @@
-import 'package:dogkipedia/components/button.dart';
-import 'package:dogkipedia/models/dog.dart';
+import 'package:Dogkipedia/components/button.dart';
+import 'package:Dogkipedia/models/dog.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -24,63 +24,63 @@ class _MenuPageState extends State<MenuPage>{
   @override
   Widget build(BuildContext) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        leading: Icon(
-          Icons.menu,
-          color: Color.fromARGB(255, 84, 171, 126),
-        ),
-        title: Text('Dogkipedia', style: GoogleFonts.archivoBlack(
-            fontSize: 25,
-            color: Color.fromARGB(255, 10, 72, 49))),
-      ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-            decoration: BoxDecoration(
-                color: Color.fromARGB(255, 157, 226, 192),
-                borderRadius: BorderRadius.circular(20)),
-            margin: const EdgeInsets.symmetric(vertical: 25,horizontal: 25),
-            padding: const EdgeInsets.symmetric(vertical: 30,horizontal: 30),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text('For Dog lovers', style: GoogleFonts.archivoBlack(
-                        fontSize: 19,
-                        color: Colors.white)
-                    ),
-                    const SizedBox(height:20),
-                    MyButton(
-                      text: "Sign in",
-                      onTap: () {
-                        Navigator.pushNamed(context, '/loginpage');
-                      },
-                    )
-                  ],
-                ),
-                Image.asset(
-                    'lib/images/smile.png',
-                    height:100
-                )
-              ],
-            ),
+        backgroundColor: Colors.white,
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          leading: Icon(
+            Icons.menu,
+            color: Color.fromARGB(255, 84, 171, 126),
           ),
-          const SizedBox(height:25),
+          title: Text('Dogkipedia', style: GoogleFonts.archivoBlack(
+              fontSize: 25,
+              color: Color.fromARGB(255, 10, 72, 49))),
+        ),
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 157, 226, 192),
+                  borderRadius: BorderRadius.circular(20)),
+              margin: const EdgeInsets.symmetric(vertical: 25,horizontal: 25),
+              padding: const EdgeInsets.symmetric(vertical: 30,horizontal: 30),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('For Dog lovers', style: GoogleFonts.archivoBlack(
+                          fontSize: 19,
+                          color: Colors.white)
+                      ),
+                      const SizedBox(height:20),
+                      MyButton(
+                        text: "Sign in",
+                        onTap: () {
+                          Navigator.pushNamed(context, '/loginpage');
+                        },
+                      )
+                    ],
+                  ),
+                  Image.asset(
+                      'lib/images/smile.png',
+                      height:100
+                  )
+                ],
+              ),
+            ),
+            const SizedBox(height:25),
 
-          Padding(
+            Padding(
               padding: const EdgeInsets.symmetric(vertical: 20,horizontal: 25),
               child:
               TextField(
                 decoration: InputDecoration(
                     border: OutlineInputBorder(
-                      borderSide: BorderSide(color: Color.fromARGB(255, 157, 226, 192)),
-                      borderRadius: BorderRadius.circular(20)
+                        borderSide: BorderSide(color: Color.fromARGB(255, 157, 226, 192)),
+                        borderRadius: BorderRadius.circular(20)
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Color.fromARGB(255, 157, 226, 192)),
@@ -88,35 +88,35 @@ class _MenuPageState extends State<MenuPage>{
                     )
                 ),
               ),
-          ),
-
-          const SizedBox(height: 25),
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 25),
-            child: Text('Dog breeds', style: GoogleFonts.archivoBlack(
-                fontSize: 19,
-                color: Colors.black)
             ),
-          ),
-          const SizedBox(height:10),
 
-          Expanded(
-            child: GridView.builder(
-              gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                  maxCrossAxisExtent: 150,
-                  mainAxisSpacing: 16,
-                  crossAxisSpacing: 20,
-                  childAspectRatio: 0.75
+            const SizedBox(height: 25),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 25),
+              child: Text('Dog breeds', style: GoogleFonts.archivoBlack(
+                  fontSize: 19,
+                  color: Colors.black)
               ),
-              itemCount: dogBreed.length,
-              itemBuilder: (context, index) => DogTile(
-                dog: dogBreed [index]
-              ),
-            )
-          ),
+            ),
+            const SizedBox(height:10),
 
-        ],
-      )
+            Expanded(
+                child: GridView.builder(
+                  gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                      maxCrossAxisExtent: 150,
+                      mainAxisSpacing: 16,
+                      crossAxisSpacing: 20,
+                      childAspectRatio: 0.75
+                  ),
+                  itemCount: dogBreed.length,
+                  itemBuilder: (context, index) => DogTile(
+                      dog: dogBreed [index]
+                  ),
+                )
+            ),
+
+          ],
+        )
     );
   }
 }
