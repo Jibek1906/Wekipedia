@@ -13,7 +13,8 @@ Dogkipedia is a mobile application that provides information about various dog b
 
 <img src='https://github.com/Jibek1906/Wekipedia/assets/100151471/da0d14e0-2363-4ef8-a8fa-d7741eb6f731' width=250>
 <img src='https://github.com/Jibek1906/Wekipedia/assets/100151471/8207ef16-c5b6-4976-b98a-499e74c2b4ed' width=250>
-<img src='https://github.com/Jibek1906/Wekipedia/assets/100151471/6f0c334f-359b-48f8-b9ce-429552cdeee2' width=250><img src='https://github.com/Jibek1906/Wekipedia/assets/100151471/b7c07770-eba9-452f-a633-d8f348703aa1' width=250>
+<img src='https://github.com/Jibek1906/Wekipedia/assets/100151471/6f0c334f-359b-48f8-b9ce-429552cdeee2' width=270>
+<img src='https://github.com/Jibek1906/Wekipedia/assets/100151471/b7c07770-eba9-452f-a633-d8f348703aa1' width=270>
 
 
 ### Prerequisites
